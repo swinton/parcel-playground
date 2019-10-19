@@ -1,0 +1,19 @@
+{
+  "name": "parcel-playground",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel index.js --target=node"
+  },
+  "keywords": [],
+  "author": "Steve Winton <stevewinton@gmail.com> (https://github.com/swinton)",
+  "license": "ISC",
+  "dependencies": {
+    "probot": "^9.5.3"
+  },
+  "devDependencies": {
+    "parcel": "^1.12.4"
+  }
+}

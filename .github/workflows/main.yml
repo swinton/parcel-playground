@@ -1,0 +1,22 @@
+on:
+  push
+
+name: Main
+
+jobs:
+  main:
+    name: Main
+    runs-on: ubuntu-latest
+    steps:
+    - name: Context
+      env:
+        GITHUB_CONTEXT: ${{ toJson(github) }}
+      run: |
+        echo "$GITHUB_CONTEXT"
+    - name: Checkout
+      uses: actions/checkout@v1.0.0
+    - name: Build
+      run: |
+        npm i
+        npm run build
+        node ./dist/index.js
